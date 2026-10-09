@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="How to delete your Driver's Pay account and all of its data, in the app or by email.">
+<title>Delete Driver's Pay Account</title>
+<style>
+  :root {
+    --bg: #F5F6F8;
+    --surface: #FFFFFF;
+    --surface-muted: #EEF0F3;
+    --border: #E3E6EB;
+    --text: #0F1115;
+    --text-2: #5A6170;
+    --text-3: #8A909C;
+    --accent: #4F46E5;
+    --accent-muted: #EEEDFD;
+    --on-accent: #FFFFFF;
+    --negative: #D92D20;
+    --negative-muted: #FDEDEB;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0B0C0F;
+      --surface: #15171C;
+      --surface-muted: #1E2128;
+      --border: #272B33;
+      --text: #F3F4F6;
+      --text-2: #A1A7B3;
+      --text-3: #6B7280;
+      --accent: #A5A8FB;
+      --accent-muted: #1F2147;
+      --on-accent: #0B0C0F;
+      --negative: #F87171;
+      --negative-muted: #2B1414;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+  .page {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 32px 16px 64px;
+  }
+  header { margin-bottom: 24px; }
+  .eyebrow {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    margin: 0 0 4px;
+  }
+  h1 {
+    font-size: 30px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin: 0 0 12px;
+  }
+  .lede { color: var(--text-2); margin: 0 0 12px; }
+  .meta {
+    color: var(--text-2);
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .meta li { margin: 2px 0; }
+  .meta strong { color: var(--text); font-weight: 600; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+    margin: 16px 0;
+  }
+  .card > :last-child { margin-bottom: 0; }
+  .tag {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-muted);
+    border-radius: 999px;
+    padding: 2px 10px;
+    margin-bottom: 8px;
+  }
+  h2 {
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    margin: 0 0 8px;
+  }
+  p { margin: 0 0 12px; }
+  ul, ol { margin: 0 0 12px; padding-left: 22px; }
+  li { margin: 4px 0; }
+
+  ol.steps {
+    list-style: none;
+    padding: 0;
+    counter-reset: step;
+  }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 40px;
+    margin: 10px 0;
+    min-height: 28px;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--on-accent);
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .email-box {
+    background: var(--surface-muted);
+    border-radius: 12px;
+    padding: 12px 14px;
+    margin: 12px 0;
+    font-size: 15px;
+  }
+  .email-box dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; }
+  .email-box dt { color: var(--text-2); }
+  .email-box dd { margin: 0; font-weight: 600; overflow-wrap: anywhere; }
+
+  .warning {
+    background: var(--negative-muted);
+    border-radius: 12px;
+    padding: 12px 14px;
+    margin: 12px 0;
+  }
+  .warning strong { color: var(--negative); }
+
+  .note {
+    background: var(--surface-muted);
+    border-radius: 12px;
+    padding: 12px 14px;
+    margin: 12px 0;
+    color: var(--text-2);
+    font-size: 15px;
+  }
+  .note strong { color: var(--text); }
+
+  a { color: var(--accent); text-underline-offset: 2px; }
+  a:hover { text-decoration-thickness: 2px; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.9em;
+    background: var(--surface-muted);
+    padding: 1px 5px;
+    border-radius: 6px;
+  }
+
+  footer {
+    color: var(--text-3);
+    font-size: 14px;
+    margin-top: 32px;
+    text-align: center;
+  }
+
+  @media (max-width: 560px) {
+    .page { padding-top: 24px; }
+    h1 { font-size: 26px; }
+    .card { padding: 16px; border-radius: 14px; }
+    .email-box dl { grid-template-columns: 1fr; gap: 0; }
+    .email-box dd { margin-bottom: 8px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <p class="eyebrow">Driver's Pay</p>
+    <h1>Delete your Driver's Pay account</h1>
+    <p class="lede">You can delete your account and all of its data at any time, in the app or by email.</p>
+    <ul class="meta">
+      <li><strong>App:</strong> Driver's Pay (Android package <code>com.driverspay.app</code>)</li>
+      <li><strong>Developer:</strong> Mareen Usliyanage</li>
+    </ul>
+  </header>
+
+  <section class="card">
+    <span class="tag">Quickest</span>
+    <h2>Delete in the app</h2>
+    <ol class="steps">
+      <li>Open Driver's Pay.</li>
+      <li>Go to <strong>Settings</strong>.</li>
+      <li>Tap <strong>Delete account</strong>.</li>
+      <li>Confirm. Your account and all of its data are deleted straight away.</li>
+    </ol>
+    <div class="note">
+      <p><strong>Want a copy first?</strong> Use <strong>Settings &gt; Export sessions</strong> to save your sessions as a spreadsheet before you delete. Once your account is deleted, the data can't be recovered.</p>
+    </div>
+  </section>
+
+  <section class="card">
+    <span class="tag">Alternative</span>
+    <h2>Ask by email</h2>
+    <p>If you can't use the app (for example, you no longer have the phone), send an email from the address on your Driver's Pay account. If you signed in with Google, use that Google account's email address.</p>
+    <div class="email-box">
+      <dl>
+        <dt>To</dt>
+        <dd><a href="mailto:mareen.abishake@gmail.com?subject=Delete%20my%20Driver%27s%20Pay%20account">mareen.abishake@gmail.com</a></dd>
+        <dt>Subject</dt>
+        <dd>Delete my Driver's Pay account</dd>
+      </dl>
+    </div>
+    <p>We'll delete the account within 30 days of your request and reply to let you know it's done.</p>
+    <div class="note">
+      <p><strong>Never backed up?</strong> If you have only used the app without adding an email or Google account, your account has no email address, so we have no way to confirm that a request is yours. Please delete it from inside the app instead.</p>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>What gets deleted</h2>
+    <ul>
+      <li><strong>Your account:</strong> its user ID, email address, password and any linked Google sign-in.</li>
+      <li><strong>All of your work sessions:</strong> dates, platforms, hours, engaged time, earnings, promotions, trips, distance, fuel and cost figures, and notes.</li>
+      <li><strong>All of your settings:</strong> default costs, goals, vehicle type, earnings period and display preferences.</li>
+    </ul>
+    <div class="warning">
+      <p><strong>Immediate and permanent.</strong> Your sessions and settings are linked to your account in the database, so deleting the account deletes all of them with it, at the same moment. This can't be undone.</p>
+    </div>
+    <p>Your appearance setting and setup status are stored only on your phone, never on our servers. Uninstalling the app removes them.</p>
+  </section>
+
+  <section class="card">
+    <h2>What we keep</h2>
+    <p>We don't keep a copy of your account, sessions or settings after they're deleted, and nothing is held back unless the law requires it.</p>
+    <p>Our hosting provider keeps routine technical logs of requests to the service, such as the time and IP address of a sign-in, for security. These aren't part of your account data and aren't used for anything else.</p>
+  </section>
+
+  <section class="card">
+    <h2>Questions</h2>
+    <p>Read the full <a href="https://mareenabishake.github.io/privacy_policy/DriversPay_privacy_policy.html">Driver's Pay Privacy Policy</a>, or email <a href="mailto:mareen.abishake@gmail.com">mareen.abishake@gmail.com</a>.</p>
+  </section>
+
+  <footer>
+    Driver's Pay &middot; Mareen Usliyanage
+  </footer>
+
+</div>
+</body>
+</html>
